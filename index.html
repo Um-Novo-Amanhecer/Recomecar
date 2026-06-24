@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -29,9 +29,83 @@ body{
 
 font-family:Inter;
 
-background:#fff8f5;
+background:#fff8f4;
 
-color:#3a2948;
+color:#382544;
+
+}
+
+a{
+text-decoration:none;
+}
+
+header{
+
+position:absolute;
+
+width:100%;
+
+z-index:10;
+
+padding:30px;
+
+}
+
+.nav{
+
+max-width:1300px;
+
+margin:auto;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.logo{
+
+color:white;
+
+font-size:28px;
+
+font-weight:700;
+
+}
+
+.menu{
+
+display:flex;
+
+gap:30px;
+
+}
+
+.menu a{
+
+color:white;
+
+}
+
+.top-btn{
+
+background:
+
+linear-gradient(
+90deg,
+#d832ff,
+#ff6d5f
+);
+
+padding:16px 28px;
+
+border-radius:999px;
+
+color:white;
+
+font-weight:700;
 
 }
 
@@ -42,11 +116,11 @@ min-height:100vh;
 background:
 
 linear-gradient(
-rgba(25,12,45,.25),
-rgba(25,12,45,.35)
+rgba(40,15,60,.35),
+rgba(40,15,60,.35)
 ),
 
-url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2200&q=80");
+url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=80");
 
 background-size:cover;
 
@@ -58,95 +132,70 @@ align-items:center;
 
 }
 
-.content{
+.hero-content{
 
-width:100%;
-
-max-width:1200px;
+max-width:1300px;
 
 margin:auto;
 
-padding:60px;
+padding:120px 40px;
 
 }
 
-.logo{
+.hero h1{
+
+font-family:Playfair Display;
+
+font-size:120px;
 
 color:white;
-
-letter-spacing:6px;
-
-font-size:14px;
-
-margin-bottom:40px;
 
 }
 
-h1{
+.hero h2{
 
-font-family:"Playfair Display";
-
-font-size:110px;
+font-size:36px;
 
 color:white;
 
-margin-bottom:10px;
-
-}
-
-.sub{
-
-font-size:30px;
-
-color:white;
-
-max-width:700px;
+margin-top:20px;
 
 line-height:1.5;
 
+max-width:700px;
+
+font-weight:300;
+
 }
 
-.botao{
+.hero-btn{
 
 display:inline-block;
 
-margin-top:40px;
+margin-top:45px;
 
 padding:24px 48px;
-
-font-size:22px;
-
-font-weight:700;
-
-text-decoration:none;
-
-color:white;
-
-border-radius:999px;
 
 background:
 
 linear-gradient(
 90deg,
-#c83ef0,
-#ff7f61
+#c234ff,
+#ff7d59
 );
+
+border-radius:999px;
+
+color:white;
+
+font-weight:700;
+
+font-size:22px;
 
 box-shadow:
 
-0 20px 60px
-rgba(255,90,120,.35);
-
-transition:.3s;
-
-}
-
-.botao:hover{
-
-transform:
-
-translateY(-4px)
-scale(1.02);
+0 25px 70px
+rgba(255,70,140,.4);
 
 }
 
@@ -156,29 +205,27 @@ padding:120px 30px;
 
 }
 
-.wrap{
+.container{
 
-max-width:1200px;
+max-width:1250px;
 
 margin:auto;
 
 }
 
-.titulo{
+.title{
 
-font-family:
-
-Playfair Display;
-
-font-size:60px;
+font-size:64px;
 
 text-align:center;
 
-margin-bottom:80px;
+font-family:Playfair Display;
+
+margin-bottom:70px;
 
 }
 
-.cards{
+.grid{
 
 display:grid;
 
@@ -194,13 +241,13 @@ gap:30px;
 
 background:white;
 
-overflow:hidden;
+border-radius:30px;
 
-border-radius:28px;
+overflow:hidden;
 
 box-shadow:
 
-0 15px 40px
+0 20px 60px
 rgba(0,0,0,.08);
 
 }
@@ -209,21 +256,21 @@ rgba(0,0,0,.08);
 
 width:100%;
 
-height:260px;
+height:300px;
 
 object-fit:cover;
 
 }
 
-.card-text{
+.card-content{
 
-padding:28px;
+padding:35px;
 
 }
 
 .card h3{
 
-font-size:30px;
+font-size:32px;
 
 margin-bottom:16px;
 
@@ -231,31 +278,31 @@ margin-bottom:16px;
 
 .card p{
 
-line-height:1.8;
+line-height:1.9;
 
 }
 
-.frase{
+.quote{
 
-padding:140px 30px;
-
-background:
-
-linear-gradient(
-90deg,
-#6320a9,
-#ff6a95
-);
+padding:160px 30px;
 
 text-align:center;
 
 color:white;
 
+background:
+
+linear-gradient(
+90deg,
+#6021a8,
+#ff6c95
+);
+
 }
 
-.frase h2{
+.quote h2{
 
-font-size:60px;
+font-size:62px;
 
 line-height:1.5;
 
@@ -265,27 +312,25 @@ margin:auto;
 
 }
 
-.final{
+.cta{
 
-padding:120px 30px;
+padding:140px 30px;
 
 text-align:center;
 
 }
 
-.final h2{
+.cta h2{
 
-font-family:
+font-size:72px;
 
-Playfair Display;
+font-family:Playfair Display;
 
-font-size:70px;
-
-margin-bottom:30px;
+margin-bottom:20px;
 
 }
 
-.final p{
+.cta p{
 
 font-size:26px;
 
@@ -293,41 +338,107 @@ margin-bottom:50px;
 
 }
 
-footer{
+.cta a{
 
-padding:40px;
+display:inline-block;
 
-text-align:center;
+padding:24px 52px;
 
-background:#291b47;
+border-radius:999px;
+
+background:
+
+linear-gradient(
+90deg,
+#d032ff,
+#ff6f60
+);
 
 color:white;
+
+font-size:24px;
+
+font-weight:700;
+
+}
+
+footer{
+
+background:#241236;
+
+color:white;
+
+padding:50px;
+
+text-align:center;
 
 }
 
 @media(max-width:768px){
 
-h1{
+.hero{
 
-font-size:70px;
+min-height:auto;
 
 }
 
-.sub{
+.hero-content{
+
+padding:140px 26px 90px;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:62px;
+
+}
+
+.hero h2{
 
 font-size:22px;
 
 }
 
-.frase h2{
+.hero-btn{
+
+width:100%;
+
+padding:20px;
+
+font-size:18px;
+
+}
+
+.menu{
+
+display:none;
+
+}
+
+.title{
 
 font-size:40px;
 
 }
 
-.titulo{
+.quote h2{
+
+font-size:34px;
+
+}
+
+.cta h2{
 
 font-size:44px;
+
+}
+
+.cta p{
+
+font-size:20px;
 
 }
 
@@ -339,15 +450,42 @@ font-size:44px;
 
 <body>
 
-<section class="hero">
+<header>
 
-<div class="content">
+<div class="nav">
 
 <div class="logo">
 
-UM NOVO AMANHECER
+☀ Um Novo Amanhecer
 
 </div>
+
+<div class="menu">
+
+<a href="#caminho">Caminho</a>
+
+<a href="#reflexao">Reflexão</a>
+
+<a href="#recomeco">Recomeço</a>
+
+</div>
+
+<a
+class="top-btn"
+href="SEU_LINK_DA_HOTMART"
+target="_blank">
+
+COMEÇAR
+
+</a>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
 
 <h1>
 
@@ -355,16 +493,16 @@ Recomeçar
 
 </h1>
 
-<div class="sub">
+<h2>
 
 Talvez você não esteja sofrendo por amor.<br>
 
 Talvez esteja sofrendo por ainda viver dentro do que já terminou.
 
-</div>
+</h2>
 
 <a
-class="botao"
+class="hero-btn"
 href="SEU_LINK_DA_HOTMART"
 target="_blank">
 
@@ -378,27 +516,27 @@ QUERO COMEÇAR MEU RECOMEÇO ❤️
 
 <section class="section">
 
-<div class="wrap">
+<div class="container">
 
-<div class="titulo">
+<div class="title">
 
 Para o seu coração
 
 </div>
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
 
-<div class="card-text">
+<div class="card-content">
 
 <h3>Entender</h3>
 
 <p>
 Não é esquecer.
-É compreender o que ainda te prende.
+É compreender por que ainda dói.
 </p>
 
 </div>
@@ -407,15 +545,15 @@ Não é esquecer.
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94">
 
-<div class="card-text">
+<div class="card-content">
 
 <h3>Soltar</h3>
 
 <p>
-Fechar ciclos não apaga histórias.
-Libera espaço para novas.
+Algumas histórias terminam.
+Você continua.
 </p>
 
 </div>
@@ -426,12 +564,12 @@ Libera espaço para novas.
 
 <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
 
-<div class="card-text">
+<div class="card-content">
 
 <h3>Recomeçar</h3>
 
 <p>
-Voltar para si é o início da transformação.
+Escolher viver o próximo capítulo.
 </p>
 
 </div>
@@ -444,18 +582,18 @@ Voltar para si é o início da transformação.
 
 </section>
 
-<section class="frase">
+<section class="quote">
 
 <h2>
 
-“Você não pode mudar o que aconteceu.
-Mas pode decidir quem será daqui para frente.”
+“Você não pode mudar o passado.
+Mas pode decidir como viver daqui pra frente.”
 
 </h2>
 
 </section>
 
-<section class="final">
+<section class="cta">
 
 <h2>
 
@@ -465,12 +603,11 @@ Você merece um novo amanhecer
 
 <p>
 
-E ele começa com uma decisão.
+Seu próximo capítulo começa agora.
 
 </p>
 
 <a
-class="botao"
 href="SEU_LINK_DA_HOTMART"
 target="_blank">
 
@@ -482,7 +619,7 @@ COMEÇAR AGORA
 
 <footer>
 
-© 2026 — Um Novo Amanhecer
+© 2026 — Recomeçar • Um Novo Amanhecer
 
 </footer>
 
