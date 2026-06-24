@@ -1,15 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Recomeçar | Um Novo Amanhecer</title>
+<title>Recomeçar • Um Novo Amanhecer</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -27,17 +28,12 @@ body{
 
 font-family:Poppins;
 
-background:#fff7f2;
+background:#fff8f5;
 
-color:#41244f;
+color:#412447;
 
 overflow-x:hidden;
 
-}
-
-img{
-display:block;
-width:100%;
 }
 
 a{
@@ -49,29 +45,22 @@ text-decoration:none;
 min-height:100vh;
 
 background:
-
 linear-gradient(
-rgba(40,15,60,.22),
-rgba(40,15,60,.45)
+rgba(30,15,60,.15),
+rgba(30,15,60,.35)
 ),
 
-url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=80");
+url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2400&q=90");
 
 background-size:cover;
 
 background-position:center;
 
-position:relative;
-
 }
 
-.top{
+.nav{
 
-max-width:1400px;
-
-margin:auto;
-
-padding:30px;
+padding:30px 50px;
 
 display:flex;
 
@@ -85,7 +74,7 @@ align-items:center;
 
 color:white;
 
-font-size:34px;
+font-size:22px;
 
 font-weight:600;
 
@@ -105,73 +94,64 @@ color:white;
 
 }
 
-.top-btn{
+.topbtn{
+
+padding:18px 30px;
 
 background:
-
 linear-gradient(
 90deg,
-#c931ff,
-#ff6d5f
+#d43df8,
+#ff6f59
 );
 
-padding:16px 30px;
+color:white;
 
 border-radius:999px;
-
-color:white;
 
 font-weight:700;
 
 }
 
-.hero-wrap{
+.hero-box{
 
 max-width:1300px;
 
 margin:auto;
 
-padding:80px 50px;
+padding:80px 60px;
 
 }
 
-.hero-text{
+.small{
 
-max-width:700px;
+color:#fff;
 
-}
-
-.kicker{
-
-color:white;
-
-font-size:22px;
-
-margin-bottom:20px;
+font-size:24px;
 
 }
 
-h1{
+.hero h1{
+
+font-size:130px;
 
 font-family:Playfair Display;
 
-font-size:120px;
-
-color:white;
-
-line-height:1;
+color:#7d1f65;
 
 }
 
-.sub{
+.hero h2{
+
+color:#45205d;
+
+font-size:38px;
+
+line-height:1.5;
+
+max-width:700px;
 
 margin-top:20px;
-
-font-size:32px;
-
-color:white;
-
-line-height:1.6;
 
 }
 
@@ -179,33 +159,32 @@ line-height:1.6;
 
 display:inline-block;
 
-margin-top:45px;
+margin-top:40px;
 
-padding:24px 52px;
+padding:24px 48px;
 
 background:
-
 linear-gradient(
 90deg,
-#cb2fff,
-#ff7a5a
+#d12fff,
+#ff7a55
 );
 
 color:white;
+
+border-radius:999px;
 
 font-size:22px;
 
 font-weight:700;
 
-border-radius:999px;
-
 }
 
 .respiro{
 
-margin-top:25px;
+margin-top:24px;
 
-color:white;
+color:#fff;
 
 }
 
@@ -215,9 +194,9 @@ margin-top:-50px;
 
 background:#fffaf7;
 
-border-radius:60px 60px 0 0;
+border-radius:70px 70px 0 0;
 
-padding:100px 40px;
+padding:90px 40px;
 
 }
 
@@ -229,19 +208,19 @@ margin:auto;
 
 }
 
-.section-title{
+.titulo{
+
+text-align:center;
 
 font-family:Playfair Display;
 
 font-size:64px;
 
-text-align:center;
-
 margin-bottom:70px;
 
 }
 
-.icons{
+.grid4{
 
 display:grid;
 
@@ -251,13 +230,13 @@ gap:30px;
 
 }
 
-.icon{
+.bloco{
 
 text-align:center;
 
 }
 
-.circle{
+.icon{
 
 width:130px;
 
@@ -275,27 +254,16 @@ align-items:center;
 
 justify-content:center;
 
-font-size:60px;
+font-size:50px;
 
 }
 
-.pink{
-background:#ffe8ee;
-}
+.i1{background:#ffe6ea;}
+.i2{background:#f1e6ff;}
+.i3{background:#eef7e4;}
+.i4{background:#fff0d8;}
 
-.purple{
-background:#efe4ff;
-}
-
-.green{
-background:#ebf7e8;
-}
-
-.orange{
-background:#fff1dc;
-}
-
-.icon h3{
+.bloco h3{
 
 font-size:34px;
 
@@ -303,7 +271,7 @@ margin-bottom:20px;
 
 }
 
-.icon p{
+.bloco p{
 
 line-height:1.9;
 
@@ -313,25 +281,27 @@ line-height:1.9;
 
 margin-top:100px;
 
-padding:160px 80px;
+padding:140px;
+
+border-radius:40px;
 
 background:
 
 linear-gradient(
 90deg,
-rgba(61,20,110,.85),
+rgba(64,24,100,.85),
 rgba(255,120,140,.25)
 ),
 
-url("https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=2200&q=80");
+url("https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=2200");
 
 background-size:cover;
+
+background-position:center;
 
 color:white;
 
 text-align:center;
-
-border-radius:40px;
 
 }
 
@@ -339,7 +309,7 @@ border-radius:40px;
 
 font-size:56px;
 
-line-height:1.6;
+line-height:1.7;
 
 }
 
@@ -359,36 +329,35 @@ gap:20px;
 
 background:white;
 
+border-radius:22px;
+
 overflow:hidden;
 
-border-radius:24px;
-
-box-shadow:
-
-0 20px 40px
-rgba(0,0,0,.08);
+box-shadow:0 20px 50px rgba(0,0,0,.08);
 
 }
 
 .card img{
 
-height:250px;
+height:240px;
 
 object-fit:cover;
+
+width:100%;
 
 }
 
 .card-body{
 
-padding:25px;
+padding:26px;
 
 }
 
-.card h3{
+.card h4{
 
-font-size:28px;
+font-size:30px;
 
-margin-bottom:15px;
+margin-bottom:16px;
 
 }
 
@@ -400,21 +369,18 @@ line-height:1.8;
 
 .banner{
 
-margin-top:100px;
+margin-top:90px;
 
-padding:60px;
+padding:50px;
 
 border-radius:30px;
 
 background:
-
 linear-gradient(
 90deg,
-#8d1db7,
-#ff5c67
+#9321b7,
+#ff6b63
 );
-
-color:white;
 
 display:flex;
 
@@ -422,13 +388,15 @@ justify-content:space-between;
 
 align-items:center;
 
+color:white;
+
 }
 
 .banner h2{
 
-font-size:50px;
-
 font-family:Playfair Display;
+
+font-size:48px;
 
 }
 
@@ -436,11 +404,11 @@ font-family:Playfair Display;
 
 background:white;
 
-padding:22px 45px;
+padding:22px 40px;
 
 border-radius:999px;
 
-color:#d03b62;
+color:#d43b6a;
 
 font-weight:700;
 
@@ -448,11 +416,11 @@ font-weight:700;
 
 footer{
 
-background:#281742;
+padding:80px;
+
+background:#25153f;
 
 color:white;
-
-padding:70px;
 
 text-align:center;
 
@@ -464,30 +432,28 @@ text-align:center;
 display:none;
 }
 
-h1{
-font-size:64px;
+.hero h1{
+font-size:72px;
 }
 
-.sub{
+.hero h2{
 font-size:22px;
 }
 
-.icons{
-
+.grid4{
 grid-template-columns:1fr;
-
 }
 
 .cards{
-
 grid-template-columns:1fr;
+}
 
+.quote{
+padding:60px 30px;
 }
 
 .quote h2{
-
 font-size:34px;
-
 }
 
 .banner{
@@ -497,12 +463,6 @@ flex-direction:column;
 gap:30px;
 
 text-align:center;
-
-}
-
-.banner h2{
-
-font-size:34px;
 
 }
 
@@ -516,7 +476,7 @@ font-size:34px;
 
 <section class="hero">
 
-<div class="top">
+<div class="nav">
 
 <div class="logo">
 ☀ Um Novo Amanhecer
@@ -528,10 +488,7 @@ font-size:34px;
 <a href="#">Conteúdos</a>
 </div>
 
-<a
-class="top-btn"
-href="SEU_LINK_DA_HOTMART"
-target="_blank">
+<a class="topbtn" href="SEU_LINK_DA_HOTMART">
 
 QUERO MEU RECOMEÇO
 
@@ -539,33 +496,24 @@ QUERO MEU RECOMEÇO
 
 </div>
 
-<div class="hero-wrap">
+<div class="hero-box">
 
-<div class="hero-text">
-
-<div class="kicker">
+<div class="small">
 
 ♡ Está na hora de
 
 </div>
 
-<h1>
+<h1>Recomeçar</h1>
 
-Recomeçar
+<h2>
 
-</h1>
+Talvez você não esteja sofrendo por amor…<br>
+talvez esteja sofrendo por não conseguir se soltar do que já acabou.
 
-<div class="sub">
+</h2>
 
-Talvez você não esteja sofrendo por amor.<br>
-Talvez esteja sofrendo por não conseguir se soltar do que já acabou.
-
-</div>
-
-<a
-class="cta"
-href="SEU_LINK_DA_HOTMART"
-target="_blank">
+<a class="cta" href="SEU_LINK_DA_HOTMART">
 
 QUERO COMEÇAR MEU RECOMEÇO
 
@@ -579,44 +527,42 @@ Respire. Leia. Recomece.
 
 </div>
 
-</div>
-
 </section>
 
 <section class="paper">
 
 <div class="container">
 
-<div class="section-title">
+<div class="titulo">
 
 Para o seu coração
 
 </div>
 
-<div class="icons">
+<div class="grid4">
 
-<div class="icon">
-<div class="circle pink">♡</div>
+<div class="bloco">
+<div class="icon i1">♡</div>
 <h3>Entender</h3>
-<p>Não é esquecer. É entender.</p>
+<p>Não é esquecer. É compreender.</p>
 </div>
 
-<div class="icon">
-<div class="circle purple">🦋</div>
+<div class="bloco">
+<div class="icon i2">🦋</div>
 <h3>Soltar</h3>
-<p>Algumas pessoas não saem da nossa vida.</p>
+<p>Algumas histórias continuam apenas na memória.</p>
 </div>
 
-<div class="icon">
-<div class="circle green">🌿</div>
+<div class="bloco">
+<div class="icon i3">🌿</div>
 <h3>Escolher</h3>
-<p>Escolher um novo caminho.</p>
+<p>Você pode criar um novo caminho.</p>
 </div>
 
-<div class="icon">
-<div class="circle orange">☀</div>
+<div class="bloco">
+<div class="icon i4">☀</div>
 <h3>Recomeçar</h3>
-<p>Você pode decidir encerrar.</p>
+<p>O ciclo se fecha quando você decide.</p>
 </div>
 
 </div>
@@ -626,7 +572,7 @@ Para o seu coração
 <h2>
 
 Você não pode mudar o que aconteceu.<br>
-Mas pode escolher como quer viver daqui pra frente.
+Mas pode escolher como viver daqui pra frente.
 
 </h2>
 
@@ -640,9 +586,7 @@ Você merece um novo amanhecer.
 
 </h2>
 
-<a
-href="SEU_LINK_DA_HOTMART"
-target="_blank">
+<a href="SEU_LINK_DA_HOTMART">
 
 COMEÇAR AGORA
 
@@ -661,4 +605,5 @@ COMEÇAR AGORA
 </footer>
 
 </body>
+
 </html>
