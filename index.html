@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Um Novo Amanhecer</title>
+<title>Um Novo Amanhecer | Recomeçar</title>
+
+<meta name="description" content="Talvez você não esteja sofrendo por amor. Talvez esteja sofrendo por não conseguir se soltar do que já acabou.">
 
 <style>
 
@@ -14,58 +17,89 @@
     box-sizing:border-box;
 }
 
+html,
 body{
-    background:#f8f3ee;
+    width:100%;
     overflow-x:hidden;
+    background:#f8f3ee;
 }
 
-.landing{
+body{
+    display:flex;
+    justify-content:center;
+}
+
+.container{
     position:relative;
     width:100%;
-    max-width:1680px;
-    margin:auto;
+    max-width:1200px;
 }
 
-.landing img{
+.container img{
     width:100%;
     height:auto;
     display:block;
 }
 
-/* ÁREAS CLICÁVEIS */
-
-/* botão topo */
-.btn-top{
+/* BOTÃO TOPO */
+.btn-topo{
     position:absolute;
-    left:76%;
-    top:1.6%;
-    width:20%;
-    height:3.2%;
+    top:1.5%;
+    right:3%;
+    width:24%;
+    height:3%;
+    z-index:10;
 }
 
-/* botão principal */
-.btn-main{
+/* BOTÃO PRINCIPAL */
+.btn-principal{
     position:absolute;
-    left:7%;
-    top:23%;
-    width:44%;
-    height:4%;
+    top:22.5%;
+    left:6%;
+    width:46%;
+    height:4.2%;
+    z-index:10;
 }
 
-/* botão rodapé */
-.btn-footer{
+/* BOTÃO RODAPÉ */
+.btn-final{
     position:absolute;
+    top:84.3%;
     left:54%;
-    top:84.6%;
-    width:34%;
-    height:3.5%;
+    width:35%;
+    height:3.2%;
+    z-index:10;
 }
 
-.btn-top,
-.btn-main,
-.btn-footer{
+.btn-topo,
+.btn-principal,
+.btn-final{
     display:block;
-    cursor:pointer;
+    text-decoration:none;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.btn-topo{
+    top:1.4%;
+    right:2%;
+    width:27%;
+}
+
+.btn-principal{
+    top:22.4%;
+    left:6%;
+    width:48%;
+}
+
+.btn-final{
+    top:84.2%;
+    left:54%;
+    width:36%;
+}
+
 }
 
 </style>
@@ -73,15 +107,33 @@ body{
 
 <body>
 
-<div class="landing">
+<div class="container">
 
-<img src="landing.jpg" alt="Um Novo Amanhecer">
+    <img src="landing.jpg" alt="Um Novo Amanhecer">
 
-<a href="https://SEU-LINK-HOTMART" class="btn-top"></a>
+    <!-- BOTÃO TOPO -->
+    <a
+    href="SEU_LINK_HOTMART"
+    target="_blank"
+    class="btn-topo"
+    aria-label="Quero meu recomeço">
+    </a>
 
-<a href="https://SEU-LINK-HOTMART" class="btn-main"></a>
+    <!-- BOTÃO PRINCIPAL -->
+    <a
+    href="SEU_LINK_HOTMART"
+    target="_blank"
+    class="btn-principal"
+    aria-label="Quero começar meu recomeço">
+    </a>
 
-<a href="https://SEU-LINK-HOTMART" class="btn-footer"></a>
+    <!-- BOTÃO FINAL -->
+    <a
+    href="SEU_LINK_HOTMART"
+    target="_blank"
+    class="btn-final"
+    aria-label="Quero meu recomeço agora">
+    </a>
 
 </div>
 
