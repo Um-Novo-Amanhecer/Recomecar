@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Recomeçar — Um Novo Amanhecer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -16,49 +21,64 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 
-font-family:Inter,sans-serif;
+font-family:Inter;
 
-background:
-linear-gradient(
-180deg,
-#0b1220,
-#151f33,
-#22314f
-);
+background:#fff8f5;
 
-color:white;
-
-display:flex;
-
-justify-content:center;
-
-padding:80px 25px;
-
-min-height:100vh;
+color:#3a2948;
 
 }
 
-.container{
+.hero{
 
-max-width:820px;
+min-height:100vh;
 
-text-align:center;
+background:
+
+linear-gradient(
+rgba(25,12,45,.25),
+rgba(25,12,45,.35)
+),
+
+url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2200&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+align-items:center;
+
+}
+
+.content{
+
+width:100%;
+
+max-width:1200px;
+
+margin:auto;
+
+padding:60px;
 
 }
 
 .logo{
 
+color:white;
+
+letter-spacing:6px;
+
 font-size:14px;
 
-letter-spacing:4px;
-
-opacity:.7;
-
-margin-bottom:35px;
-
-text-transform:uppercase;
+margin-bottom:40px;
 
 }
 
@@ -66,63 +86,23 @@ h1{
 
 font-family:"Playfair Display";
 
-font-size:70px;
+font-size:110px;
 
-margin-bottom:25px;
+color:white;
 
-line-height:1;
+margin-bottom:10px;
 
 }
 
 .sub{
 
-font-size:28px;
-
-font-weight:300;
-
-line-height:1.5;
-
-color:#d7dfef;
-
-margin-bottom:60px;
-
-}
-
-.card{
-
-background:rgba(255,255,255,.06);
-
-backdrop-filter:blur(20px);
-
-border:1px solid rgba(255,255,255,.12);
-
-padding:55px;
-
-border-radius:30px;
-
-text-align:left;
-
-}
-
-.card p{
-
-font-size:21px;
-
-line-height:1.9;
-
-margin-bottom:28px;
-
-color:#eef2ff;
-
-}
-
-.destaque{
-
-font-size:26px;
+font-size:30px;
 
 color:white;
 
-font-weight:600;
+max-width:700px;
+
+line-height:1.5;
 
 }
 
@@ -130,27 +110,32 @@ font-weight:600;
 
 display:inline-block;
 
-margin-top:45px;
+margin-top:40px;
 
-padding:22px 50px;
+padding:24px 48px;
+
+font-size:22px;
+
+font-weight:700;
+
+text-decoration:none;
+
+color:white;
+
+border-radius:999px;
 
 background:
 
 linear-gradient(
 90deg,
-#7c5cff,
-#4a8dff
+#c83ef0,
+#ff7f61
 );
 
-color:white;
+box-shadow:
 
-text-decoration:none;
-
-font-weight:700;
-
-font-size:20px;
-
-border-radius:999px;
+0 20px 60px
+rgba(255,90,120,.35);
 
 transition:.3s;
 
@@ -158,43 +143,191 @@ transition:.3s;
 
 .botao:hover{
 
-transform:translateY(-4px);
+transform:
+
+translateY(-4px)
+scale(1.02);
 
 }
 
-.frase{
+.section{
 
-margin-top:55px;
-
-opacity:.65;
-
-font-size:15px;
+padding:120px 30px;
 
 }
 
-@media(max-width:700px){
+.wrap{
 
-h1{
+max-width:1200px;
 
-font-size:48px;
+margin:auto;
 
 }
 
-.sub{
+.titulo{
 
-font-size:21px;
+font-family:
+
+Playfair Display;
+
+font-size:60px;
+
+text-align:center;
+
+margin-bottom:80px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
 
 }
 
 .card{
 
-padding:35px;
+background:white;
+
+overflow:hidden;
+
+border-radius:28px;
+
+box-shadow:
+
+0 15px 40px
+rgba(0,0,0,.08);
+
+}
+
+.card img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+}
+
+.card-text{
+
+padding:28px;
+
+}
+
+.card h3{
+
+font-size:30px;
+
+margin-bottom:16px;
 
 }
 
 .card p{
 
-font-size:18px;
+line-height:1.8;
+
+}
+
+.frase{
+
+padding:140px 30px;
+
+background:
+
+linear-gradient(
+90deg,
+#6320a9,
+#ff6a95
+);
+
+text-align:center;
+
+color:white;
+
+}
+
+.frase h2{
+
+font-size:60px;
+
+line-height:1.5;
+
+max-width:1000px;
+
+margin:auto;
+
+}
+
+.final{
+
+padding:120px 30px;
+
+text-align:center;
+
+}
+
+.final h2{
+
+font-family:
+
+Playfair Display;
+
+font-size:70px;
+
+margin-bottom:30px;
+
+}
+
+.final p{
+
+font-size:26px;
+
+margin-bottom:50px;
+
+}
+
+footer{
+
+padding:40px;
+
+text-align:center;
+
+background:#291b47;
+
+color:white;
+
+}
+
+@media(max-width:768px){
+
+h1{
+
+font-size:70px;
+
+}
+
+.sub{
+
+font-size:22px;
+
+}
+
+.frase h2{
+
+font-size:40px;
+
+}
+
+.titulo{
+
+font-size:44px;
 
 }
 
@@ -206,68 +339,153 @@ font-size:18px;
 
 <body>
 
-<div class="container">
+<section class="hero">
+
+<div class="content">
 
 <div class="logo">
+
 UM NOVO AMANHECER
+
 </div>
 
-<h1>Recomeçar</h1>
+<h1>
+
+Recomeçar
+
+</h1>
 
 <div class="sub">
-Não é sobre esquecer.<br>
-É sobre voltar para si.
+
+Talvez você não esteja sofrendo por amor.<br>
+
+Talvez esteja sofrendo por ainda viver dentro do que já terminou.
+
+</div>
+
+<a
+class="botao"
+href="SEU_LINK_DA_HOTMART"
+target="_blank">
+
+QUERO COMEÇAR MEU RECOMEÇO ❤️
+
+</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="wrap">
+
+<div class="titulo">
+
+Para o seu coração
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94">
+
+<div class="card-text">
+
+<h3>Entender</h3>
+
+<p>
+Não é esquecer.
+É compreender o que ainda te prende.
+</p>
+
+</div>
+
 </div>
 
 <div class="card">
 
-<p>
-Talvez você não esteja sofrendo por amor…
-talvez esteja sofrendo por não conseguir se soltar do que já acabou.
-</p>
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+<div class="card-text">
+
+<h3>Soltar</h3>
 
 <p>
-Algumas pessoas não partem da nossa vida de repente.
-Elas permanecem nas lembranças e naquilo que poderia ter sido.
+Fechar ciclos não apaga histórias.
+Libera espaço para novas.
 </p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+
+<div class="card-text">
+
+<h3>Recomeçar</h3>
 
 <p>
-Em algum momento você percebe:
-não é sobre esquecer alguém.
-É sobre entender por que isso ainda te prende.
+Voltar para si é o início da transformação.
 </p>
 
-<p class="destaque">
-Recomeçar não é apagar o passado.
-É parar de viver dentro dele.
-</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="frase">
+
+<h2>
+
+“Você não pode mudar o que aconteceu.
+Mas pode decidir quem será daqui para frente.”
+
+</h2>
+
+</section>
+
+<section class="final">
+
+<h2>
+
+Você merece um novo amanhecer
+
+</h2>
 
 <p>
-O ciclo não se fecha sozinho.
-Ele se fecha quando você decide encerrar.
-</p>
 
-<center>
+E ele começa com uma decisão.
+
+</p>
 
 <a
 class="botao"
-href="#">
+href="SEU_LINK_DA_HOTMART"
+target="_blank">
 
-Quero começar meu recomeço
+COMEÇAR AGORA
 
 </a>
 
-</center>
+</section>
 
-</div>
+<footer>
 
-<div class="frase">
+© 2026 — Um Novo Amanhecer
 
-Respire. Leia. Recomece.
-
-</div>
-
-</div>
+</footer>
 
 </body>
+
 </html>
