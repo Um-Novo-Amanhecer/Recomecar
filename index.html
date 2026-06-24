@@ -1,609 +1,94 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Recomeçar • Um Novo Amanhecer</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Um Novo Amanhecer - Recomeçar</title>
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-
-font-family:Poppins;
-
-background:#fff8f5;
-
-color:#412447;
-
-overflow-x:hidden;
-
-}
-
-a{
-text-decoration:none;
-}
-
-.hero{
-
-min-height:100vh;
-
-background:
-linear-gradient(
-rgba(30,15,60,.15),
-rgba(30,15,60,.35)
-),
-
-url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2400&q=90");
-
-background-size:cover;
-
-background-position:center;
-
-}
-
-.nav{
-
-padding:30px 50px;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-}
-
-.logo{
-
-color:white;
-
-font-size:22px;
-
-font-weight:600;
-
-}
-
-.menu{
-
-display:flex;
-
-gap:40px;
-
-}
-
-.menu a{
-
-color:white;
-
-}
-
-.topbtn{
-
-padding:18px 30px;
-
-background:
-linear-gradient(
-90deg,
-#d43df8,
-#ff6f59
-);
-
-color:white;
-
-border-radius:999px;
-
-font-weight:700;
-
-}
-
-.hero-box{
-
-max-width:1300px;
-
-margin:auto;
-
-padding:80px 60px;
-
-}
-
-.small{
-
-color:#fff;
-
-font-size:24px;
-
-}
-
-.hero h1{
-
-font-size:130px;
-
-font-family:Playfair Display;
-
-color:#7d1f65;
-
-}
-
-.hero h2{
-
-color:#45205d;
-
-font-size:38px;
-
-line-height:1.5;
-
-max-width:700px;
-
-margin-top:20px;
-
-}
-
-.cta{
-
-display:inline-block;
-
-margin-top:40px;
-
-padding:24px 48px;
-
-background:
-linear-gradient(
-90deg,
-#d12fff,
-#ff7a55
-);
-
-color:white;
-
-border-radius:999px;
-
-font-size:22px;
-
-font-weight:700;
-
-}
-
-.respiro{
-
-margin-top:24px;
-
-color:#fff;
-
-}
-
-.paper{
-
-margin-top:-50px;
-
-background:#fffaf7;
-
-border-radius:70px 70px 0 0;
-
-padding:90px 40px;
-
+    background:#f8f3ee;
+    font-family:Arial, sans-serif;
 }
 
 .container{
-
-max-width:1300px;
-
-margin:auto;
-
+    position:relative;
+    width:100%;
+    max-width:1680px;
+    margin:auto;
 }
 
-.titulo{
-
-text-align:center;
-
-font-family:Playfair Display;
-
-font-size:64px;
-
-margin-bottom:70px;
-
+.container img{
+    width:100%;
+    display:block;
 }
 
-.grid4{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:30px;
-
+/* BOTÃO TOPO */
+.btn-topo{
+    position:absolute;
+    top:2.3%;
+    right:3%;
+    width:22%;
+    height:3.5%;
+    display:block;
 }
 
-.bloco{
-
-text-align:center;
-
+/* BOTÃO HERO */
+.btn-principal{
+    position:absolute;
+    top:28.8%;
+    left:7%;
+    width:42%;
+    height:4.5%;
+    display:block;
 }
 
-.icon{
-
-width:130px;
-
-height:130px;
-
-border-radius:50%;
-
-margin:auto;
-
-margin-bottom:25px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:50px;
-
+/* BOTÃO CTA FINAL */
+.btn-final{
+    position:absolute;
+    top:89%;
+    left:55%;
+    width:34%;
+    height:3.5%;
+    display:block;
 }
-
-.i1{background:#ffe6ea;}
-.i2{background:#f1e6ff;}
-.i3{background:#eef7e4;}
-.i4{background:#fff0d8;}
-
-.bloco h3{
-
-font-size:34px;
-
-margin-bottom:20px;
-
-}
-
-.bloco p{
-
-line-height:1.9;
-
-}
-
-.quote{
-
-margin-top:100px;
-
-padding:140px;
-
-border-radius:40px;
-
-background:
-
-linear-gradient(
-90deg,
-rgba(64,24,100,.85),
-rgba(255,120,140,.25)
-),
-
-url("https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=2200");
-
-background-size:cover;
-
-background-position:center;
-
-color:white;
-
-text-align:center;
-
-}
-
-.quote h2{
-
-font-size:56px;
-
-line-height:1.7;
-
-}
-
-.cards{
-
-margin-top:100px;
-
-display:grid;
-
-grid-template-columns:repeat(5,1fr);
-
-gap:20px;
-
-}
-
-.card{
-
-background:white;
-
-border-radius:22px;
-
-overflow:hidden;
-
-box-shadow:0 20px 50px rgba(0,0,0,.08);
-
-}
-
-.card img{
-
-height:240px;
-
-object-fit:cover;
-
-width:100%;
-
-}
-
-.card-body{
-
-padding:26px;
-
-}
-
-.card h4{
-
-font-size:30px;
-
-margin-bottom:16px;
-
-}
-
-.card p{
-
-line-height:1.8;
-
-}
-
-.banner{
-
-margin-top:90px;
-
-padding:50px;
-
-border-radius:30px;
-
-background:
-linear-gradient(
-90deg,
-#9321b7,
-#ff6b63
-);
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-color:white;
-
-}
-
-.banner h2{
-
-font-family:Playfair Display;
-
-font-size:48px;
-
-}
-
-.banner a{
-
-background:white;
-
-padding:22px 40px;
-
-border-radius:999px;
-
-color:#d43b6a;
-
-font-weight:700;
-
-}
-
-footer{
-
-padding:80px;
-
-background:#25153f;
-
-color:white;
-
-text-align:center;
-
-}
-
-@media(max-width:900px){
-
-.menu{
-display:none;
-}
-
-.hero h1{
-font-size:72px;
-}
-
-.hero h2{
-font-size:22px;
-}
-
-.grid4{
-grid-template-columns:1fr;
-}
-
-.cards{
-grid-template-columns:1fr;
-}
-
-.quote{
-padding:60px 30px;
-}
-
-.quote h2{
-font-size:34px;
-}
-
-.banner{
-
-flex-direction:column;
-
-gap:30px;
-
-text-align:center;
-
-}
-
-}
-
 </style>
-
 </head>
 
 <body>
 
-<section class="hero">
-
-<div class="nav">
-
-<div class="logo">
-☀ Um Novo Amanhecer
-</div>
-
-<div class="menu">
-<a href="#">Início</a>
-<a href="#">Sobre</a>
-<a href="#">Conteúdos</a>
-</div>
-
-<a class="topbtn" href="SEU_LINK_DA_HOTMART">
-
-QUERO MEU RECOMEÇO
-
-</a>
-
-</div>
-
-<div class="hero-box">
-
-<div class="small">
-
-♡ Está na hora de
-
-</div>
-
-<h1>Recomeçar</h1>
-
-<h2>
-
-Talvez você não esteja sofrendo por amor…<br>
-talvez esteja sofrendo por não conseguir se soltar do que já acabou.
-
-</h2>
-
-<a class="cta" href="SEU_LINK_DA_HOTMART">
-
-QUERO COMEÇAR MEU RECOMEÇO
-
-</a>
-
-<div class="respiro">
-
-Respire. Leia. Recomece.
-
-</div>
-
-</div>
-
-</section>
-
-<section class="paper">
-
 <div class="container">
 
-<div class="titulo">
+    <img src="landing.jpg" alt="Um Novo Amanhecer">
 
-Para o seu coração
+    <!-- BOTÃO TOPO -->
+    <a
+        href="https://SEU-LINK-HOTMART-AQUI"
+        class="btn-topo"
+        target="_blank">
+    </a>
 
-</div>
+    <!-- BOTÃO PRINCIPAL -->
+    <a
+        href="https://SEU-LINK-HOTMART-AQUI"
+        class="btn-principal"
+        target="_blank">
+    </a>
 
-<div class="grid4">
-
-<div class="bloco">
-<div class="icon i1">♡</div>
-<h3>Entender</h3>
-<p>Não é esquecer. É compreender.</p>
-</div>
-
-<div class="bloco">
-<div class="icon i2">🦋</div>
-<h3>Soltar</h3>
-<p>Algumas histórias continuam apenas na memória.</p>
-</div>
-
-<div class="bloco">
-<div class="icon i3">🌿</div>
-<h3>Escolher</h3>
-<p>Você pode criar um novo caminho.</p>
-</div>
-
-<div class="bloco">
-<div class="icon i4">☀</div>
-<h3>Recomeçar</h3>
-<p>O ciclo se fecha quando você decide.</p>
-</div>
+    <!-- BOTÃO FINAL -->
+    <a
+        href="https://SEU-LINK-HOTMART-AQUI"
+        class="btn-final"
+        target="_blank">
+    </a>
 
 </div>
-
-<div class="quote">
-
-<h2>
-
-Você não pode mudar o que aconteceu.<br>
-Mas pode escolher como viver daqui pra frente.
-
-</h2>
-
-</div>
-
-<div class="banner">
-
-<h2>
-
-Você merece um novo amanhecer.
-
-</h2>
-
-<a href="SEU_LINK_DA_HOTMART">
-
-COMEÇAR AGORA
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 Um Novo Amanhecer
-
-</footer>
 
 </body>
-
 </html>
