@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Um Novo Amanhecer - Recomeçar</title>
+
+<title>Um Novo Amanhecer</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -14,79 +16,72 @@
 
 body{
     background:#f8f3ee;
-    font-family:Arial, sans-serif;
+    overflow-x:hidden;
 }
 
-.container{
+.landing{
     position:relative;
     width:100%;
     max-width:1680px;
     margin:auto;
 }
 
-.container img{
+.landing img{
     width:100%;
+    height:auto;
     display:block;
 }
 
-/* BOTÃO TOPO */
-.btn-topo{
+/* ÁREAS CLICÁVEIS */
+
+/* botão topo */
+.btn-top{
     position:absolute;
-    top:2.3%;
-    right:3%;
-    width:22%;
-    height:3.5%;
-    display:block;
+    left:76%;
+    top:1.6%;
+    width:20%;
+    height:3.2%;
 }
 
-/* BOTÃO HERO */
-.btn-principal{
+/* botão principal */
+.btn-main{
     position:absolute;
-    top:28.8%;
     left:7%;
-    width:42%;
-    height:4.5%;
-    display:block;
+    top:23%;
+    width:44%;
+    height:4%;
 }
 
-/* BOTÃO CTA FINAL */
-.btn-final{
+/* botão rodapé */
+.btn-footer{
     position:absolute;
-    top:89%;
-    left:55%;
+    left:54%;
+    top:84.6%;
     width:34%;
     height:3.5%;
-    display:block;
 }
+
+.btn-top,
+.btn-main,
+.btn-footer{
+    display:block;
+    cursor:pointer;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="landing">
 
-    <img src="landing.jpg" alt="Um Novo Amanhecer">
+<img src="landing.jpg" alt="Um Novo Amanhecer">
 
-    <!-- BOTÃO TOPO -->
-    <a
-        href="https://SEU-LINK-HOTMART-AQUI"
-        class="btn-topo"
-        target="_blank">
-    </a>
+<a href="https://SEU-LINK-HOTMART" class="btn-top"></a>
 
-    <!-- BOTÃO PRINCIPAL -->
-    <a
-        href="https://SEU-LINK-HOTMART-AQUI"
-        class="btn-principal"
-        target="_blank">
-    </a>
+<a href="https://SEU-LINK-HOTMART" class="btn-main"></a>
 
-    <!-- BOTÃO FINAL -->
-    <a
-        href="https://SEU-LINK-HOTMART-AQUI"
-        class="btn-final"
-        target="_blank">
-    </a>
+<a href="https://SEU-LINK-HOTMART" class="btn-footer"></a>
 
 </div>
 
